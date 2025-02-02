@@ -1,0 +1,104 @@
+/* Custom Color Palette */
+:root {
+    --primary-color: #4caf50; /* Green */
+    --secondary-color: #f1f1f1; /* Light Gray */
+    --highlight-color: #ff9800; /* Orange */
+    --text-color: #333; /* Dark Gray */
+    --background-color: #ffffff; /* White */
+    --input-background: #e8f5e9; /* Light Green */
+    --button-color: #4caf50; /* Green */
+    --button-hover: #45a049; /* Darker Green */
+}
+
+/* General Form Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--secondary-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    width: 50%;
+    background-color: var(--background-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.form-header {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+/* Form Sections */
+.form-section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: var(--highlight-color);
+    color: var(--background-color);
+}
+
+.form-section--with-opacity {
+    opacity: 0.8; /* Applying opacity */
+    background-color: var(--primary-color);
+}
+
+/* Input Field Styling */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    background-color: var(--input-background);
+    color: var(--text-color);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: var(--highlight-color);
+    background-color: var(--background-color);
+}
+
+/* Radio Button Styling */
+.radio-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--button-color);
+    color: var(--background-color);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--button-hover);
+}

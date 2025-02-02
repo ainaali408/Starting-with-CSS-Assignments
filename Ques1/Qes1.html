@@ -1,0 +1,46 @@
+<!-- 1.Create a simple page with some div tags and show different ways to add CSS as well as what happens
+when you target the same elements with inline, internal, and external CSS. Also, utilize comments in the
+project where required -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Styling Example</title>
+
+    <!-- Internal CSS -->
+    <style>
+        /* Styling for divs with the class 'internal' */
+        .internal {
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Example of Inline CSS -->
+    <div style="background-color: lightgreen; color: white; padding: 15px; text-align: center;">
+        This div is styled with inline CSS.
+    </div>
+
+    <!-- Example of Internal CSS -->
+    <div class="internal">
+        This div is styled with internal CSS.
+    </div>
+
+    <!-- Example of External CSS -->
+    <div class="external">
+        This div is styled with external CSS.
+    </div>
+
+    <!-- Example to demonstrate CSS conflicts -->
+    <div class="conflict" style="color: red;">
+        When targeting the same element with multiple CSS methods, inline CSS takes precedence.
+    </div>
+</body>

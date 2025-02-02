@@ -1,0 +1,33 @@
+/* Block: content, Element: paragraph */
+
+/* Base styling for all paragraphs inside the content block */
+.content__paragraph {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+/* Modifier: Primary paragraph styling */
+.content__paragraph--primary {
+    color: white;
+    background-color: #4caf50;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Modifier: Secondary paragraph styling */
+.content__paragraph--secondary {
+    color: black;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* Modifier: Highlighted paragraph styling */
+.content__paragraph--highlighted {
+    color: white;
+    background-color: #ff9800;
+    padding: 15px;
+    border: 2px dashed #ff5722;
+}

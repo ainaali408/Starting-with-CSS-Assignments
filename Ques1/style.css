@@ -1,0 +1,14 @@
+/* External CSS styling */
+.external {
+    background-color: lightcoral;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Conflict example: This will be overridden by inline CSS for color */
+.conflict {
+    background-color: lightyellow;
+    color: blue;
+    padding: 20px;
+    text-align: center;
+}

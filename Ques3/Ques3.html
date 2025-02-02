@@ -1,0 +1,55 @@
+<!--3. Develop an HTML form with various input elements. Use CSS to style the form, including setting
+background colors for input fields. Create a custom color palette for the form elements, and demonstrate
+how to apply opacity to one of the form sections. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1 class="form-header">Registration Form</h1>
+        
+        <!-- Form Section with Opacity -->
+        <div class="form-section form-section--with-opacity">
+            <h2>Personal Details</h2>
+            <form action="#">
+                <!-- Input fields -->
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" placeholder="Enter your age">
+            </form>
+        </div>
+
+        <!-- Another Form Section -->
+        <div class="form-section">
+            <h2>Account Information</h2>
+            <form action="#">
+                <!-- Password field -->
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                
+                <!-- Radio Buttons -->
+                <label>Gender:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                    <label><input type="radio" name="gender" value="other"> Other</label>
+                </div>
+                
+                <!-- Submit button -->
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

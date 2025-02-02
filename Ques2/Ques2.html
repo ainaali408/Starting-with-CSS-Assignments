@@ -1,0 +1,27 @@
+<!-- 2.Build an HTML page with multiple paragraphs, each assigned a unique class name. Write CSS rules using
+class selectors to apply distinct styling to each paragraph. Follow the BEM naming convention and
+explain how you've named the classes= -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM Styled Paragraphs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content">
+        <!-- Block: content -->
+        <p class="content__paragraph content__paragraph--primary">
+            This is the first paragraph, styled with a primary theme.
+        </p>
+        <p class="content__paragraph content__paragraph--secondary">
+            This is the second paragraph, styled with a secondary theme.
+        </p>
+        <p class="content__paragraph content__paragraph--highlighted">
+            This is the third paragraph, styled with a highlighted theme.
+        </p>
+    </div>
+</body>
+</html>
